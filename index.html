@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de Estudos</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>📊 Dashboard de Estudos</h1>
+  </header>
+
+  <main>
+    <section class="input-section">
+      <label for="horas">Horas de estudo hoje:</label>
+      <input type="number" id="horas" min="0" max="12" placeholder="Ex: 2">
+      <button id="adicionar">Adicionar</button>
+    </section>
+
+    <section class="grafico-section">
+      <canvas id="graficoEstudos"></canvas>
+    </section>
+
+    <section class="acoes">
+      <button id="resetar">Resetar Semana</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 - Seu Nome</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
